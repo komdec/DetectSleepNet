@@ -82,11 +82,11 @@
     <td><b>88.1<b></td>
     <td><b>80.8<b></td>
     <td><b>0.833<b></td>
-    <td>93</td>
-    <td>49</td>
-    <td>89</td>
-    <td>85</td>
-    <td>89</td>
+    <td><b>93.1<b></td>
+    <td>48.6</td>
+    <td><b>88.6<b></td>
+    <td><ins>85.0<ins></td>
+    <td><b>88.6<b></td>
   </tr>
   <tr>
     <td>SleePyCo</td>
