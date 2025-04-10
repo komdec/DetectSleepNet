@@ -21,27 +21,38 @@
   </tr></thead>
 <tbody>
   <tr>
-    <td rowspan="5">Physio2018</td>
+    <td rowspan="6">Physio2018</td>
     <td>DetectSleepNet</td>
-    <td><b>80.9<b></td>
-    <td><b>79.0<b></td>
-    <td><b>0.739<b></td>
-    <td><b>84.6<b></td>
-    <td><ins>59.0<ins></td>
-    <td><ins>85.1<ins></td>
-    <td><b>80.2<b></td>
-    <td><b>86.3<b></td>
+    <td><b>80.9</b></td>
+    <td><b>79.0</b></td>
+    <td><b>0.739</b></td>
+    <td><b>84.6</b></td>
+    <td><ins>59.0</ins></td>
+    <td><ins>85.1</ins></td>
+    <td><b>80.2</b></td>
+    <td><b>86.3</b></td>
   </tr>
   <tr>
     <td>SleePyCo</td>
-    <td>80.9</td>
-    <td>78.9</td>
-    <td>0.737</td>
-    <td>84.2</td>
-    <td>59.3</td>
-    <td>85.3</td>
-    <td>79.4</td>
-    <td>86.3</td>
+    <td><b>80.9</b></td>
+    <td><ins>78.9</ins></td>
+    <td><ins>0.737</ins></td>
+    <td><ins>84.2</ins></td>
+    <td><b>59.3</b></td>
+    <td><b>85.3</b></td>
+    <td><ins>79.4</ins></td>
+    <td><b>86.3</b></td>
+  </tr>
+  <tr>
+    <td>DetectSleepNet-tiny</td>
+    <td>80.5</td>
+    <td>78.6</td>
+    <td>0.734</td>
+    <td>84.0</td>
+    <td>57.8</td>
+    <td>84.8</td>
+    <td><b>80.2</b></td>
+    <td><ins>86.2</ins></td>
   </tr>
   <tr>
     <td>XSleepNet</td>
@@ -77,27 +88,27 @@
     <td>83.5</td>
   </tr>
   <tr>
-    <td rowspan="6">SHHS</td>
+    <td rowspan="7">SHHS</td>
     <td>DetectSleepNet</td>
-    <td><b>88.1<b></td>
-    <td><b>80.8<b></td>
-    <td><b>0.833<b></td>
-    <td><b>93.1<b></td>
+    <td><b>88.1</b></td>
+    <td><b>80.8</b></td>
+    <td><b>0.833</b></td>
+    <td><b>93.1</b></td>
     <td>48.6</td>
-    <td><b>88.6<b></td>
-    <td><ins>85.0<ins></td>
-    <td><b>88.6<b></td>
+    <td><b>88.6</b></td>
+    <td><ins>85.0</ins></td>
+    <td><b>88.6</b></td>
   </tr>
   <tr>
     <td>SleePyCo</td>
-    <td>87.9</td>
-    <td>80.7</td>
-    <td>0.830</td>
-    <td>92.6</td>
-    <td>49.2</td>
-    <td>88.5</td>
+    <td><ins>87.9</ins></td>
+    <td><ins>80.7</ins></td>
+    <td><ins>0.830</ins></td>
+    <td><ins>92.6</ins></td>
+    <td><ins>49.2</ins></td>
+    <td><ins>88.5</ins></td>
     <td>84.5</td>
-    <td>88.6</td>
+    <td><b>88.6</b></td>
   </tr>
   <tr>
     <td>SleepTransformer</td>
@@ -107,19 +118,30 @@
     <td>92.2</td>
     <td>46.1</td>
     <td>88.3</td>
-    <td>85.2</td>
-    <td>88.6</td>
+    <td><b>85.2</b></td>
+    <td><b>88.6</b></td>
   </tr>
   <tr>
     <td>XSleepNet</td>
     <td>87.6</td>
-    <td>80.7</td>
+    <td><ins>80.7</ins></td>
     <td>0.826</td>
     <td>92.0</td>
-    <td>49.9</td>
+    <td><b>49.9</b></td>
     <td>88.3</td>
     <td>85.0</td>
-    <td>88.2</td>
+    <td><ins>88.2</ins></td>
+  </tr>
+    <tr>
+    <td>DetectSleepNet-tiny</td>
+    <td>87.4</td>
+    <td>79.0</td>
+    <td>0.822</td>
+    <td>92.3</td>
+    <td>43.0</td>
+    <td>88.0</td>
+    <td>83.9</td>
+    <td>87.9</td>
   </tr>
   <tr>
     <td>IITNet</td>
@@ -129,7 +151,7 @@
     <td>90.1</td>
     <td>48.1</td>
     <td>88.4</td>
-    <td>85.2</td>
+    <td><b>85.2</b></td>
     <td>87.2</td>
   </tr>
   <tr>
@@ -145,13 +167,51 @@
   </tr>
 </tbody></table>
 
-**Tab1. Benchmarking against recent state-of-the-art methods**
+**Table1. Benchmarking against recent state-of-the-art methods**
 
 <img src="figures/diff_sample.jpg" alt="EEG data with different adoption rates" width="450">
 
 **Fig1. EEG data with different adoption rates**
 
+<table>
+<thead>
+  <tr>
+    <th>Method</th>
+    <th>parameter</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>DetectSleepNet-tiny</td>
+    <td><b>0.049M</b></td>
+  </tr>
+  <tr>
+    <td>DetectSleepNet</td>
+    <td><ins>0.43M</ins></td>
+  </tr>
+  <tr>
+    <td>SalientSleepNet</td>
+    <td>0.9M</td>
+  </tr>
+  <tr>
+    <td>U-time</td>
+    <td>1.1M</td>
+  </tr>
+  <tr>
+    <td>TinySleepNet</td>
+    <td>1.3M</td>
+  </tr>
+  <tr>
+    <td>SleepEEGNet</td>
+    <td>2.1M</td>
+  </tr>
+  <tr>
+    <tr>DeepSleepNet</tr>
+    <tr>21M</tr>
+  </tr>      
+</tbody>
+</table>
 
-<img src="figures/para.jpg" alt="The parameter count of various models across different methods" width="200">
 
-**Fig2. The number of model parameters for different methods**
+**Table2. The number of model parameters for different methods**
+
